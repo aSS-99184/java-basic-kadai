@@ -4,7 +4,7 @@ public class CarExec_Chapter15 {
 
 	public static void main(String[] args) {
 		
-		Car_Chapter15 speedometer = new Car_Chapter15(1 , 10);
+		Car_Chapter15 speedometer = new Car_Chapter15();
 		speedometer.gearChange(3);
 		speedometer.run();
 		

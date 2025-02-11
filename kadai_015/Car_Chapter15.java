@@ -29,11 +29,6 @@ public class Car_Chapter15 {
 	private int gear = 1;		//1速から5速のギアを表す
 	private int speed = 10;		//ギアチェンジ後の速度を表す
 	
-//	コンストラクタ
-	public Car_Chapter15( int gear, int speed ) {
-		this.gear = gear; 
-		this.speed = speed;
-	}
 	
 //	ギアチェンジメソッド
 	public void gearChange(int afterGear) {
