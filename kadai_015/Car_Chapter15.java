@@ -1,28 +1,3 @@
-
-//Step2. 車クラスを作成する
-//車クラスは、ギアチェンジすると速度が変わり、走行した時に変わった速度が表示されます。車クラスは、次のフィールドを持ちます。
-//アクセス修飾子	データ型	フィールド名	用途						初期値
-//private			int	    	gear			1速から5速のギアを表す		1
-//private			int  		speed			ギアチェンジ後の速度を表す	10
-
-//アクセス修飾子	戻り値			メソッド名			用途							引数
-//public			void			gearChange			ギアの値により速度を変える		int afterGear　←gearChangeメソッドに渡された引数という意味。
-//public			void			run					ギアチェンジ後の速度を表示する	無し　←run メソッドに渡された引数という意味 
-
-//メソッドの書き方
-//修飾子　戻り値の型　メソッド名(引数の宣言) {
-//	処理内容
-//}
-
-//ギア(afterGear)   速度(this.speed)
-//1				    時速10km
-//2				    時速20km
-//3					時速30km
-//4					時速40km
-//5					時速50km
-//上記以外のギア	時速10km
-
-
 package kadai_015;
 public class Car_Chapter15 {
 
@@ -50,8 +25,8 @@ public class Car_Chapter15 {
 			default -> this.speed = 10;
 			}
 		
-		//ギアのフィールドを変更させる
-		this.gear = afterGear;
+			//ギアのフィールドを変更させる
+			this.gear = afterGear;
 		 }
 		
 		
@@ -60,6 +35,31 @@ public class Car_Chapter15 {
 		
 	}
 }
+
+//～～～～～要件～～～～～～～
+//Step2. 車クラスを作成する
+//車クラスは、ギアチェンジすると速度が変わり、走行した時に変わった速度が表示されます。車クラスは、次のフィールドを持ちます。
+//アクセス修飾子	データ型	フィールド名	用途						初期値
+//private			int	    	gear			1速から5速のギアを表す		1
+//private			int  		speed			ギアチェンジ後の速度を表す	10
+
+//アクセス修飾子	戻り値			メソッド名			用途							引数
+//public			void			gearChange			ギアの値により速度を変える		int afterGear　←gearChangeメソッドに渡された引数という意味。
+//public			void			run					ギアチェンジ後の速度を表示する	無し　←run メソッドに渡された引数という意味 
+
+//メソッドの書き方
+//修飾子　戻り値の型　メソッド名(引数の宣言) {
+//	処理内容
+//}
+
+//ギア(afterGear)   速度(this.speed)
+//1				    時速10km
+//2				    時速20km
+//3					時速30km
+//4					時速40km
+//5					時速50km
+//上記以外のギア	時速10km
+
 
 
 //～～～～～～～～学習メモ～～～～～～～～
